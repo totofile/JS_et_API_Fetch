@@ -24,6 +24,9 @@ btn.onclick = () => {
     img.src = affiche.data.images.jpg.image_url;
     output.appendChild(img);
 })
+.catch((error) => {
+    console.log("Nous ne trouvons pas ce manga a partir de cet ID")
+  });
 };
 
 btn2.onclick = () => {
@@ -39,6 +42,9 @@ btn2.onclick = () => {
     img2.src = affiche.data.images.jpg.image_url;
     output2.appendChild(img2);
 })
+.catch((error) => {
+    console.log("Nous ne trouvons pas ce manga a partir de cet ID")
+  });
 }
 
 
